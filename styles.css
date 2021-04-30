@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100vh;
+  background: linear-gradient(to right, rgb(158, 191, 255), rgb(125, 213, 194));
+  background-position: center;
+  background-size: cover;
+  overflow-y: outset;
+}
+
+.calculator {
+  background-color: black;
+  margin: 100px auto;
+  max-width: 700px;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px black;
+  user-select: none;
+}
+
+.screen {
+  min-height: 100px;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 30px;
+  text-align: right;
+  font-size: 40px;
+  /*limit amount of characters on the screen */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  background-color: #D8D8D8;
+  color: #000;
+  font-weight: bold;
+  user-select: text;
+  outline: 1px solid black;
+  outline-offset: -3px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.btn-grid-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.top {
+  border-radius: 5px;
+}
+
+#clear {
+  width: 75%;
+  background-color: rgb(81, 175, 134) !important;
+}
+
+#backspace {
+  width: 82.5px;
+  background-color: rgb(162, 81, 216) !important;
+}
+
+.btn {
+  padding: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0px 0px 3px black;
+  background-color: #999;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.operator {
+  background-color: rgb(209, 81, 216) !important;
+}
+
+#equals {
+  background-color: rgb(216, 81, 90) !important;
+}
+
+.btn:hover {
+  filter: brightness(90%);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+footer {
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 10px;
+  width: 1 00%;
+  text-align: center;
+  font-family: 'Bowlby One SC', cursive;
+  text-shadow: 0px 0px 3px black;
+}
+
+footer a {
+  color: #fff;
+}
+
+a:visited,
+a:hover {
+  text-decoration: none;
+}
